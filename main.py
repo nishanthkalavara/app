@@ -9,14 +9,14 @@ from fastapi.middleware.cors import CORSMiddleware
 
 models.Base.metadata.create_all(bind=engine)
 
-app = FastAPI()
+app = FastAPI(docs_url="/swagger-ui")
 
 origins = [
     "http://localhost.tiangolo.com",
     "https://localhost.tiangolo.com",
     "http://localhost",
     "http://localhost:8080",
-    "http://localhost:8081"
+    "http://localhost:8081",
     "http://127.0.0.1:5500",
     "https://youthful-feynman-0144cf.netlify.app",
 ]
