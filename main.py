@@ -18,7 +18,7 @@ origins = [
     "http://localhost:8080",
     "http://localhost:8081",
     "http://127.0.0.1:5500",
-    "https://youthful-feynman-0144cf.netlify.app",
+    "http://18.212.22.42/frontend",
 ]
 
 app.add_middleware(
